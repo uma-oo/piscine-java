@@ -4,6 +4,6 @@ public class Palindrome {
         // your code here
       String firstHalf  =  s.substring(0, s.length()/2+1); 
       String secondHalf  = new StringBuilder(s.substring(s.length()/2, s.length())).reverse().toString(); 
-      return  firstHalf.equals(secondHalf); 
+      return  firstHalf.toLowerCase().equals(secondHalf.toLowerCase()); 
     }
 }
