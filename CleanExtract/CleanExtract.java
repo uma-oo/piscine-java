@@ -31,7 +31,7 @@ public class CleanExtract {
 
             // System.out.println(startIndex);
             if (start && endIndex == 0) {
-                subResult = subString.substring(startIndex + 1, subString.length() - 1).strip();
+                subResult = subString.substring(startIndex + 1, subString.length()).strip();
             }
 
             if (!start) {
