@@ -10,6 +10,6 @@ public class StringConcat {
             return s1;
         }
         // your code here
-        return s1 + s1;
+        return s1 + s2;
     }
 }
