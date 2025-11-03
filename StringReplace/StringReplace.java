@@ -4,7 +4,7 @@ public class StringReplace <T>{
         // your code here
         String targetNew = String.valueOf(target);
         String replacementNew = String.valueOf(replacement); 
-        s.replace(targetNew, replacementNew); 
-        return s; 
+        String sNew = s.replace(targetNew, replacementNew); 
+        return sNew; 
     }
 }
