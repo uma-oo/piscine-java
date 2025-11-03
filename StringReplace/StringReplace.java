@@ -1,9 +1,10 @@
 
-public class StringReplace {
-    public static String replace(String s, String target, String replacement) {
+public class StringReplace <T>{
+    public static <T> String replace(String s, T target, T  replacement) {
         // your code here
-       
-        s.replace(target, replacement); 
+        String targetNew = String.valueOf(target);
+        String replacementNew = String.valueOf(replacement); 
+        s.replace(targetNew, replacementNew); 
         return s; 
     }
 }
