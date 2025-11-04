@@ -2,6 +2,10 @@
 public class ComputeArray {
     public static int[] computeArray(int[] array) {
 
+        if (array == null) {
+            return null;
+        }
+
         int[] result = new int[array.length];
         // your code here
         for (int i = 0; i < array.length; i++) {
