@@ -3,7 +3,7 @@ public class DoOp {
     public static String operate(String[] args) {
         
         if (args.length !=3 ){
-            return "it depend on the input."; 
+            return "Error"; 
         }
         
         // your code here
