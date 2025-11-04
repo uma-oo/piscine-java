@@ -2,6 +2,9 @@
 
 public class Palindrome {
   public static boolean isPalindrome(String s) {
+    if (s==null) {
+      return false; 
+    }
    
     int start = 0;
     int end = s.length() - 1;
