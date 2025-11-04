@@ -1,9 +1,20 @@
+// len  = 7 -> middle = 7/2 = 3 
 
 public class Palindrome {
-    public static boolean isPalindrome(String s) {
-        // your code here
-      String firstHalf  =  s.substring(0, s.length()/2+1); 
-      String secondHalf  = new StringBuilder(s.substring(s.length()/2, s.length())).reverse().toString(); 
-      return  firstHalf.toLowerCase().equals(secondHalf.toLowerCase()); 
+  public static boolean isPalindrome(String s) {
+   
+    int start = 0;
+    int end = s.length() - 1;
+
+    while (start < end) {
+      if (s.toLowerCase().charAt(start) != s.toLowerCase().charAt(end)) {
+        return false;
+      }
+      start++;
+      end--;
+
     }
+
+    return true;
+  }
 }
