@@ -1,6 +1,7 @@
 
 import java.io.*;
 import java.nio.file.Paths;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Path;
 
 public class FileManager {
@@ -16,7 +17,7 @@ public class FileManager {
         // your code here
         InputStream reader = new FileInputStream(fileName);
         byte[] bytes = reader.readAllBytes();
-        return bytes.toString();
+        return new String(bytes); 
     }
 
     public static void deleteFile(String fileName) {
