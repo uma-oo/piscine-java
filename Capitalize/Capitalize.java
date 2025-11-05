@@ -20,7 +20,7 @@ public class Capitalize {
 
             for (String word : words) {
                 if (word.length() > 0) {
-                    newWords.add(Character.toUpperCase(word.charAt(0)) + word.substring(1));
+                    newWords.add(Character.toUpperCase(word.charAt(0)) + word.substring(1).toLowerCase());
                 } 
             }
             String newLine = String.join(" ", newWords);
