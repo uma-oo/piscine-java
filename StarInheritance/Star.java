@@ -1,7 +1,7 @@
 
 public class Star extends CelestialObject {
 
-    public double magnitude;
+    private double magnitude;
 
     public void setMagnitude(double newMagnitude) {
         this.magnitude = newMagnitude;
