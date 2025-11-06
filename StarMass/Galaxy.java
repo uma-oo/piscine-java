@@ -23,13 +23,16 @@ public class Galaxy {
 
     public Map<String, Integer> computeMassRepartition() {
         Map<String, Integer> dictionnary = new HashMap<>();
+        dictionnary.put("Star", 0); 
+        dictionnary.put("Other", 0); 
+        dictionnary.put("Planet", 0);
         for (CelestialObject obj : this.celestialObjects) {
             if (obj instanceof Star) {
-                dictionnary.put("Star", dictionnary.getOrDefault("Star", 0) + obj.getMass());
+                dictionnary.put("Star", dictionnary.get("Star") + obj.getMass());
             } else if (obj instanceof Planet) {
-                dictionnary.put("Planet", dictionnary.getOrDefault("Planet", 0) + obj.getMass());
+                dictionnary.put("Planet", dictionnary.get("Planet") + obj.getMass());
             } else {
-                dictionnary.put("Other", dictionnary.getOrDefault("Other", 0)+obj.getMass()); 
+                dictionnary.put("Other", dictionnary.get("Other")+obj.getMass()); 
             }
         }
         return  dictionnary;
