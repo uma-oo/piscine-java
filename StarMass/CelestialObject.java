@@ -1,8 +1,5 @@
 
-
 import java.util.Objects;
-
-
 
 public class CelestialObject {
 
@@ -10,21 +7,23 @@ public class CelestialObject {
     public double y;
     public double z;
     public String name;
+    public int mass;
     public static final double KM_IN_ONE_AU = 150_000_000;
-
 
     public CelestialObject() {
         this.x = 0.0;
         this.y = 0.0;
         this.z = 0.0;
+        this.mass = 0;
         this.name = "Soleil";
     }
 
-    public CelestialObject(String newName, double newX, double newY, double newZ) {
+    public CelestialObject(String newName, double newX, double newY, double newZ, int newMass) {
         this.x = newX;
         this.y = newY;
         this.z = newZ;
         this.name = newName;
+        this.mass = newMass;
     }
 
     public double getZ() {
@@ -43,6 +42,10 @@ public class CelestialObject {
         return this.name;
     }
 
+    public int getMass() {
+        return this.mass;
+    }
+
     public void setZ(double newZ) {
         this.z = newZ;
     }
@@ -57,6 +60,10 @@ public class CelestialObject {
 
     public void setName(String newName) {
         this.name = newName;
+    }
+
+     public void setMass(int newMass) {
+        this.mass = newMass;
     }
 
     public static double getDistanceBetween(CelestialObject obj1, CelestialObject obj2) {
