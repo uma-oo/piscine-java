@@ -3,19 +3,20 @@ import java.util.Objects;
 
 public class CelestialObject {
 
-    public double x;
-    public double y;
-    public double z;
+    public double x, y, z;
     public String name;
     private int mass;
     public static final double KM_IN_ONE_AU = 150_000_000;
 
     public CelestialObject() {
-        this.x = 0.0;
-        this.y = 0.0;
-        this.z = 0.0;
-        this.mass = 0;
-        this.name = "Soleil";
+
+        // this.x = 0.0;
+        // this.y = 0.0;
+        // this.z = 0.0;
+        // this.mass = 0;
+        // this.name = "Soleil";
+        // this is also works and the order of params are taken from the constructor that comes after this one 
+        this("Soleil",0.0, 0.0, 0.0, 0); 
     }
 
     public CelestialObject(String newName, double newX, double newY, double newZ, int newMass) {
