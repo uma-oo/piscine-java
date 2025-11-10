@@ -4,9 +4,9 @@
 
 public class Character {
    
-    final int maxHealth; 
-    int currentHealth; 
-    final String name; 
+    private final int maxHealth; 
+    private int currentHealth; 
+    private final String name; 
 
 
     public String  getName() {
