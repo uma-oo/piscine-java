@@ -21,8 +21,8 @@ public class Sorcerer extends Character implements Healer {
     @Override 
     public void heal(Character character) {
         int count = 1; 
-        while (character.currentHealth < character.getMaxHealth() && count <= this.healCapacity) {
-            character.currentHealth += 1; 
+        while (character.getCurrentHealth() < character.getMaxHealth() && count <= this.healCapacity) {
+            character.setCurrentHealth(character.getCurrentHealth()+1); 
             count +=1; 
         }
     }
