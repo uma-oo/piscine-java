@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-
+import  java.util.List; 
 
 
 public class Character {
@@ -8,7 +8,7 @@ public class Character {
     private int currentHealth; 
     private final String name; 
 
-    private static ArrayList<Character> allCharacters = new ArrayList<Character>();
+    private static List<Character> allCharacters = new ArrayList<Character>();
 
 
     public String  getName() {
