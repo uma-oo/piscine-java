@@ -65,6 +65,7 @@ public class Character {
     } else {
         result += "Characters currently fighting :\n"; 
         for (Character character: allCharacters) {
+          result += " - "; 
           result +=  character.toString(); 
           result += "\n";
         }
