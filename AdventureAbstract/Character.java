@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import  java.util.List; 
 
 
-public class Character {
+public abstract class Character {
    
     private final int maxHealth; 
     private int currentHealth; 
@@ -47,20 +47,10 @@ public class Character {
         return  String.format("%s : %d/%d", this.name, this.currentHealth , this.maxHealth); 
         
     }
+ 
 
-    public void takeDamage(int damage) {
-       int count = 1 ; 
-        while (this.currentHealth>0 && count<=damage ){
-          this.currentHealth -=1;
-          count +=1; 
-        }
-    }
-
-
-   public void attack(Character  other) {
-      other.takeDamage(9); 
-   }
-
+    abstract void takeDamage(int damage);     
+    abstract  void attack(Character character); 
 
    public static String printStatus() { 
     String result = new String(); 

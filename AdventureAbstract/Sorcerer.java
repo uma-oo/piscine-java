@@ -37,6 +37,25 @@ public class Sorcerer extends Character implements Healer {
      } 
      return  String.format("%s is a sorcerer with %d HP. It can heal %d HP.", this.getName(), this.getCurrentHealth(), this.getHealCapacity()); 
     }
+
+
+
+
+   @Override 
+     public void takeDamage(int damage) {
+       int count = 1 ; 
+        while (this.getCurrentHealth()>0 && count<=damage){
+          this.setCurrentHealth(getCurrentHealth()-1);
+          count +=1; 
+        }
+    }  
+
+    @Override 
+   public void attack(Character  other) {
+      this.heal(this);
+      other.takeDamage(10); 
+   } 
+
 }
 
 
