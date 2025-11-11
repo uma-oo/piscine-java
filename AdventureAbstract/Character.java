@@ -24,7 +24,7 @@ public abstract class Character {
     }
 
 
-    public  void setCurrentHealth(int newCurrentHealth) {
+    protected  void setCurrentHealth(int newCurrentHealth) {
           this.currentHealth  = newCurrentHealth; 
     }
 
