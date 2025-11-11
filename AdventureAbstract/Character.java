@@ -49,8 +49,8 @@ public abstract class Character {
     }
  
 
-    abstract void takeDamage(int damage);     
-    abstract  void attack(Character character); 
+    public abstract void takeDamage(int damage);     
+    public abstract  void attack(Character character); 
 
    public static String printStatus() { 
     String result = new String(); 

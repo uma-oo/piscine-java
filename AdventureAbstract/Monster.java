@@ -17,7 +17,7 @@ public class Monster extends Character {
    }
 
    @Override 
-     public void takeDamage(int damage) {
+   public void takeDamage(int damage) {
        int count = 1 ; 
         while (this.getCurrentHealth()>0 && count<=Math.floor(damage*0.8)){
           this.setCurrentHealth(getCurrentHealth()-1);
