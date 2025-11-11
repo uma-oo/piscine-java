@@ -7,7 +7,7 @@ public class Cat {
 
         for (String fileName : args) {
             FileInputStream reader = new FileInputStream(fileName);
-            System.out.write(reader.readAllBytes());
+            // System.out.write(reader.readAllBytes());
             int bytesRead;
             byte[] buff = new byte[1024];
             while ((bytesRead = reader.read(buff)) != -1) {

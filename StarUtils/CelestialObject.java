@@ -44,8 +44,8 @@ public class CelestialObject {
         this.z = newZ;
     }
 
-    public void setY(double newY) {
-        this.y = newY;
+    public void setY(double y) {
+        this.y = y;
     }
 
     public void setX(double newX) {

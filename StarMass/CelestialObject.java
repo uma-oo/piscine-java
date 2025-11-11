@@ -5,7 +5,7 @@ public class CelestialObject {
 
     public double x, y, z;
     public String name;
-    private int mass;
+    protected int mass;
     public static final double KM_IN_ONE_AU = 150_000_000;
 
     public CelestialObject() {

@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import  java.util.List; 
 
 
-public class Character {
+public  class Character {
    
     private final int maxHealth; 
     private int currentHealth; 
@@ -54,12 +54,16 @@ public class Character {
           this.currentHealth -=1;
           count +=1; 
         }
-    }
+    }  
+
+    //abstract void takeDamage(int damage); 
 
 
    public void attack(Character  other) {
       other.takeDamage(9); 
-   }
+   } 
+     
+   // abstract  void attack(Character character); 
 
 
    public static String printStatus() { 

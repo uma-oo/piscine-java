@@ -27,6 +27,7 @@ public class Galaxy {
         dictionnary.put("Other", 0); 
         dictionnary.put("Planet", 0);
         for (CelestialObject obj : this.celestialObjects) {
+            // System.out.println("mass: "+ obj.mass);
             if (obj instanceof Star) {
                 dictionnary.put("Star", dictionnary.get("Star") + obj.getMass());
             } else if (obj instanceof Planet) {
