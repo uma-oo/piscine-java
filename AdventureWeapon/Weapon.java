@@ -1,7 +1,7 @@
 
 public class Weapon {
 
-    private String name;
+    private final String name;
     private int damage;
 
     public int getDamage() {
