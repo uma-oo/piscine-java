@@ -2,7 +2,7 @@
 public class Weapon {
 
     private final String name;
-    private int damage;
+    private final int damage;
 
     public int getDamage() {
         return this.damage;
