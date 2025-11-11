@@ -42,7 +42,7 @@ public class Templar extends Character implements Healer, Tank  {
          return String.format("%s has been beaten, even with its %d shield. So bad, it could heal %d HP.", this.getName(), this.getShield(), this.getHealCapacity() ); 
        }
 
-       return String.format("%s is a strong Templar with %d HP. It can heal %d HP and has a shield of %d.", this.getName(), this.getCurrentHealth(), this.getShield(),this.getHealCapacity());
+       return String.format("%s is a strong Templar with %d HP. It can heal %d HP and has a shield of %d.", this.getName(), this.getCurrentHealth(),this.getHealCapacity(),  this.getShield());
     }
 
 
