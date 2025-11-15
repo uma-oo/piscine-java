@@ -28,7 +28,7 @@ public class WeddingComplex {
                                 couples.remove(otherMan); 
                                 couples.put(man, woman); 
                                 i =-1; 
-                                break; 
+        
                                 
                             }
                             
