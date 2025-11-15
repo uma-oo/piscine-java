@@ -61,7 +61,11 @@ public class StreamCollect {
                 return;
             }
         }
-        dict.put(key, Optional.of(number));
+
+        if (value == null || !value.isPresent()) {
+            dict.put(key, Optional.of(number));
+            return;
+        }
     }
 
     public static String orderAndConcatWithSharp(Stream<String> s) {
