@@ -12,34 +12,34 @@ public class WeddingComplex {
         
         Map<String, String> couples = new HashMap<>(); 
         // iterate over men 
-        for (Map.Entry<String, List<String>> entry : first.entrySet())  {
-            String man = entry.getKey(); 
-            List<String> womenOfInterest = entry.getValue(); 
-       
-            for (String woman: womenOfInterest ) {
-                if (!couples.containsValue(woman)) {
-                   couples.put(man, woman); 
-                   break; 
-                } 
-                String otherMan = getKeyByValue(couples, woman);
-                List<String> menOfInterest = second.get(woman); 
-                if (menOfInterest.contains(man) && menOfInterest.indexOf(man) < menOfInterest.indexOf(otherMan)) {
-                    couples.remove(otherMan); 
-                    couples.put(man, woman); 
-                    break; 
-                    
-                }
-                   
+        for (int i =0 ; i<first.size(); i++) {
+            for (Map.Entry<String, List<String>> entry : first.entrySet())  {
+                        String man = entry.getKey(); 
+                        List<String> womenOfInterest = entry.getValue(); 
                 
-            }
+                        for (String woman: womenOfInterest ) {
+                            if (!couples.containsValue(woman)) {
+                            couples.put(man, woman); 
+                            break; 
+                            } 
+                            String otherMan = getKeyByValue(couples, woman);
+                            List<String> menOfInterest = second.get(woman); 
+                            if (menOfInterest.contains(man) && menOfInterest.indexOf(man) < menOfInterest.indexOf(otherMan)) {
+                                couples.remove(otherMan); 
+                                couples.put(man, woman); 
+                                i =-1; 
+                                break; 
+                                
+                            }
+                            
+                            
+                        }
 
-        }
+                    }
 
-        return couples; 
-
-
-
-         
+                }
+        
+        return couples;          
     } 
 
 
