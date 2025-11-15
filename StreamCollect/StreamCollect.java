@@ -42,9 +42,10 @@ public class StreamCollect {
                 case 2:
                     processNumbers(2, dict, number);
                     break;
-                default:
+                case 3:
                     processNumbers(3, dict, number);
                     break;
+
             }
         }
 
@@ -68,7 +69,7 @@ public class StreamCollect {
 
         String[] words = s.toArray(String[]::new);
         Arrays.sort(words);
-        return "{"+String.join(" # ", words)+"}";
+        return "{" + String.join(" # ", words) + "}";
 
     }
 }
