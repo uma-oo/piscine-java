@@ -22,7 +22,7 @@ public class DifferenceBetweenDate {
         }
 
         if (date1.isBefore(date2)) {
-            return Period.between(date2, date1);
+            return Period.between(date1, date2);
         }
         return Period.between(date1, date2);
 
