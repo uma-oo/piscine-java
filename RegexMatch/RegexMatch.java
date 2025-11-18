@@ -12,7 +12,7 @@ public class RegexMatch {
 
     public static boolean startWithLetterAndEndWithNumber(String s) {
         // your code here
-        Pattern p = Pattern.compile("^\\w(.*)\\d$");
+        Pattern p = Pattern.compile("^[a-zA-Z](.*)\\d$");
         Matcher m = p.matcher(s);
         return m.matches();
     }
