@@ -21,8 +21,9 @@ public class DifferenceBetweenDate {
             return null;
         }
 
-        if (date1.isBefore(date2)) {
-            return Period.between(date1, date2);
+
+        if (Period.between(date1, date2).isNegative()) {
+            return Period.between(date2, date1);
         }
         return Period.between(date1, date2);
 
