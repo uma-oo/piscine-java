@@ -78,7 +78,7 @@ public class RegexReplace {
         }
 
         if (domainParts.length == 3) {
-            result.add(domainParts[2] + ".");
+            result.add(domainParts[1] + ".");
             result.add(domainParts[2].replaceAll(".", "*"));
         }
 
