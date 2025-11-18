@@ -8,7 +8,7 @@ public class ExerciseRunner {
 
     public static void main(String[] args) {
          Map<String, List<String>> men = Map.of("Naruto", List.of("Sakura", "Hinata"), "Sasuke",
-                List.of("Sakura", "Hinata"));
+                List.of("Hinata","Sakura"));
         Map<String, List<String>> women = Map.of("Sakura", List.of("Sasuke", "Naruto"), "Hinata",
                 List.of("Naruto", "Sasuke"));
         

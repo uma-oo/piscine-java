@@ -43,7 +43,6 @@ public class WeddingComplex {
                     }
             
             
-            
             }
             singles.removeAll(toRemove);
             singles.addAll(toAdd);
